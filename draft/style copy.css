@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  font-family: "SoDo Sans SemiBold", Helvetica Neue, Helvetica, Arial,
+    sans-serif;
+}
+.navbar {
+  padding: 20px;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar-left svg {
+  width: 50px;
+  margin-right: 20px;
+}
+.navbar-left div {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.navbar-left,
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-left > *,
+.navbar-right > * {
+  margin: 10px;
+}
+
+.find-a-store {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+}
+
+.sign-in,
+.join-now {
+  font-weight: 500;
+  border: 1px solid #000;
+  border-radius: 40px;
+  padding: 5px 20px 5px 20px;
+}
+
+.join-now {
+  background: #000;
+  color: #fff;
+}
+
+.join-now:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.sign-in:hover {
+  background: rgba(0, 0, 0, 0.06);
+}
