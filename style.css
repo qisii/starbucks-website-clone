@@ -111,6 +111,13 @@ header {
 }
 
 /* /////////////////////////////////// MEDIA QUERIES */
+@media (min-width: 1025px) {
+  #bar,
+  #close {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 1024px) {
   .logo {
     width: 100%;
@@ -124,7 +131,7 @@ header {
   }
 
   #bar,
-  #cross {
+  #close {
     cursor: pointer;
   }
 
@@ -140,10 +147,6 @@ header {
     align-items: flex-start;
     flex-direction: column;
     transition: all 0.5s;
-  }
-
-  .nav div {
-    width: 100%;
   }
 
   .nav ul {
