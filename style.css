@@ -165,6 +165,87 @@ header {
   line-height: 30px;
 }
 
+/* banners */
+.item1 {
+  background: #f1f0eb;
+}
+
+.item2 {
+  background: #f1f0eb;
+  flex-direction: row-reverse;
+}
+
+.item3 {
+  background: #c0e9a7;
+}
+
+.item4 {
+  background: #025939;
+  flex-direction: row-reverse;
+}
+
+.item5 {
+  background: #dcf2ea;
+}
+
+.item6 {
+  background: #0021db;
+  flex-direction: row-reverse;
+}
+
+.item7 {
+  background: #97d8b0;
+}
+
+.item1 .banner-text,
+.item2 .banner-text,
+.item3 .banner-text {
+  color: #224037;
+}
+
+.banner-text p {
+  line-height: 34px;
+}
+.item1 .btn1,
+.item2 .btn1,
+.item3 .btn1 {
+  color: #224037;
+  border: 1px solid #224037;
+}
+
+.item4 .banner-text,
+.item6 .banner-text {
+  color: #fff;
+}
+
+.item4 .btn3,
+.item6 .btn3 {
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.item1 .banner-text p {
+  margin-right: 3%;
+  margin-left: 3%;
+}
+
+.item6 .banner-text h1 {
+  margin: 0 10%;
+}
+
+.item6 .banner-text p {
+  margin-top: 20px;
+}
+
+.item7 .banner-text {
+  color: #0f4032;
+}
+
+.item7 .btn1 {
+  color: #0f4032;
+  border: 1px solid #0f4032;
+}
+
 /* /////////////////////////////////// MEDIA QUERIES */
 /* for tablet */
 @media (min-width: 1025px) {
@@ -250,6 +331,53 @@ header {
     width: 100px;
     min-width: 90px;
   }
+
+  /* banners */
+  .banner-text h1 {
+    font-size: 30px;
+  }
+
+  .banner-text {
+    padding: 30px 0;
+  }
+
+  .item1 .banner-text {
+    margin: 0;
+  }
+
+  .item6 .banner-text {
+    margin: 0 15%;
+  }
+
+  .item2 .banner-text,
+  .item3 .banner-text,
+  .item4 .banner-text,
+  .item7 .banner-text {
+    margin: 0 3%;
+  }
+
+  .item2 .banner-text p,
+  .item1 .banner-text p,
+  .item6 .banner-text p {
+    font-size: 22px;
+  }
+
+  .banner-text .h1-smaller {
+    font-size: 22px;
+    letter-spacing: 0;
+  }
+
+  .banner-text .p-smaller {
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  .banner-item .btn1,
+  .banner-item .btn2,
+  .banner-item .btn3 {
+    font-size: 14px;
+    font-weight: 700;
+  }
 }
 
 /* for smartphone */
@@ -269,5 +397,33 @@ header {
 
   .nav ul li {
     font-size: 20px;
+  }
+
+  /* banner */
+  .banner-item {
+    flex-wrap: wrap;
+  }
+
+  .banner .banner-item img {
+    width: 100%;
+  }
+
+  .banner-text h1 {
+    font-size: 28px;
+  }
+
+  .item1 .banner-text h1,
+  .item2 .banner-text h1 {
+    font-weight: 700;
+  }
+
+  /* .item6 .banner-text {
+    margin: 0 5%;
+  } */
+}
+
+@media only screen and (max-width: 480px) {
+  .item6 .banner-text {
+    margin: 0 5%;
   }
 }
