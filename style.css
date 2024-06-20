@@ -274,7 +274,7 @@ footer {
 }
 
 .footer-head h3 {
-  /* color: rgba(0, 0, 0, 0.9); */
+  color: rgba(0, 0, 0, 0.8);
   font-weight: 500;
 }
 
@@ -285,8 +285,12 @@ footer {
 .footer-list li {
   padding: 15px 0;
   color: rgba(0, 0, 0, 0.48);
-  font-size: 16px;
-  font-weight: 300;
+  font-size: 15px;
+  /* font-weight: 400; */
+}
+
+.footer-list li:hover {
+  color: rgba(0, 0, 0, 0.8);
 }
 
 /* /////////////////////////////////// MEDIA QUERIES */
@@ -420,6 +424,40 @@ footer {
   .banner-item .btn3 {
     font-size: 14px;
     font-weight: 700;
+  }
+
+  .footer-opt {
+    flex-direction: column;
+    padding: 10px 0;
+  }
+
+  .footer-opt div {
+    width: 100%;
+    margin: 0;
+    padding: 15px 10px;
+  }
+
+  .footer-head {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer-head h3 {
+    font-size: 16px;
+  }
+
+  .footer-list {
+    display: none;
+  }
+
+  .arrow {
+    display: block;
+    cursor: pointer;
+    transition: all 0.5s;
+  }
+
+  .footer-list li {
+    padding: 13px 0;
   }
 }
 
