@@ -69,7 +69,11 @@ header {
   display: flex;
   align-items: center;
   height: 100%;
-  border-bottom: 5px solid transparent;
+  border-bottom: 6px solid transparent;
+}
+
+.nav ul li.active {
+  border-bottom: 6px solid #1d664a;
 }
 
 .nav .location img {
@@ -284,9 +288,9 @@ footer {
 
 .footer-list li {
   padding: 15px 0;
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(0, 0, 0, 0.5);
   font-size: 15px;
-  /* font-weight: 300; */
+  font-weight: 500;
 }
 
 .footer-list li:hover {
@@ -338,6 +342,7 @@ footer {
   justify-content: flex-start;
   padding: 10px 0;
   color: rgba(0, 0, 0, 0.8);
+  font-weight: 500;
 }
 
 .footer-opt2 .copy-desc a:hover {

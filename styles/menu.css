@@ -41,8 +41,145 @@
 
 .menu-name {
   grid-area: menuName;
+  padding: 80px 0 0 130px;
+  max-width: 300px;
+}
+
+.menu-name ul {
+  width: 140px;
+}
+
+.menu-name h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  opacity: 0.9;
+}
+
+.menu-name a {
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 500;
+}
+
+.menu-name a li {
+  padding: 10px 0;
 }
 
 .menu-items {
   grid-area: menuItems;
+  padding: 90px 20px 0 100px;
+}
+.menu-items a {
+  color: rgba(0, 0, 0, 0.9);
+  font-weight: 500;
+}
+
+.menu-items h1 {
+  margin-bottom: 20px;
+  opacity: 0.9;
+}
+
+.menu-items .item-head {
+  width: 100%;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.3);
+}
+
+.menu-items h2 {
+  opacity: 0.9;
+}
+
+.order-menu-items {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: 50% auto;
+  margin-bottom: 20px;
+}
+
+.order-items {
+  margin: 20px 0 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.order-items div {
+  width: 120px;
+  height: 120px;
+  overflow: hidden;
+  margin-right: 20px;
+}
+
+.order-items div img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.order-items span {
+  font-size: 20px;
+  width: 300px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .menu {
+    grid-template-columns: auto;
+    grid-template-areas:
+      "menuNav menuNav menuNav"
+      "menuItems menuItems menuItems";
+  }
+
+  .menu-name {
+    display: none;
+  }
+
+  .menu-items {
+    padding-left: 130px;
+    padding-right: 100px;
+  }
+
+  .menu-items .order-menu-items .order-items div {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .menu a {
+    border-bottom: none;
+  }
+
+  .menu-nav {
+    padding-left: 20px;
+  }
+
+  .menu-items {
+    padding-left: 20px;
+  }
+
+  .menu-items h1 {
+    font-size: 24px;
+    margin-bottom: 0;
+  }
+
+  .menu-items h2 {
+    font-size: 20px;
+  }
+
+  .order-menu-items {
+    grid-template-columns: auto;
+    margin-bottom: 10px;
+  }
+
+  .order-menu-items .order-items {
+    margin: 10px 0 5px 0;
+  }
+
+  .order-items span {
+    font-size: 16px;
+  }
+
+  .menu-items .item-head {
+    margin-bottom: 20px;
+  }
 }
