@@ -72,3 +72,15 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const menuNav = document.querySelector(".menu-nav");
+
+  window.addEventListener("scroll", () => {
+    if (window.pageYOffset > menuNav.offsetTop) {
+      menuNav.classList.add("sticky");
+    } else {
+      menuNav.classList.remove("sticky");
+    }
+  });
+});
