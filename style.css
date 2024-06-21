@@ -259,7 +259,7 @@ footer {
 
 .footer-opt {
   padding: 30px 40px;
-  border-bottom: 1px solid rgba(128, 128, 128, 0.43);
+  border-bottom: 2px solid rgba(128, 128, 128, 0.192);
   display: flex;
   justify-content: flex-start;
 }
@@ -291,6 +291,62 @@ footer {
 
 .footer-list li:hover {
   color: rgba(0, 0, 0, 0.8);
+}
+
+.footer-opt2 {
+  padding: 40px;
+}
+
+.footer-opt2 .social {
+  /* margin-right: 5px; */
+  display: flex;
+}
+
+.footer-opt2 .social a {
+  background: #000000e5;
+  margin-right: 14px;
+  padding: 5px 4px 2px 6px;
+  border-radius: 20px;
+  border: 1px solid #00000005;
+  transition: all 0.5s;
+}
+
+.footer-opt2 .social .icon {
+  font-size: 22px;
+  color: #fff;
+}
+
+.footer-opt2 .social {
+  margin-bottom: 30px;
+}
+
+.footer-opt2 .social a:hover {
+  background: rgba(128, 128, 128, 0.43);
+  border: 1px solid #000000e5;
+}
+
+.footer-opt2 .social .icon:hover {
+  color: #000000e5;
+}
+
+.footer-opt2 .copy-desc {
+  margin-bottom: 30px;
+}
+
+.footer-opt2 .copy-desc a {
+  display: flex;
+  justify-content: flex-start;
+  padding: 10px 0;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.footer-opt2 .copy-desc a:hover {
+  text-decoration: underline;
+}
+
+.footer-opt2 .copyright {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.48);
 }
 
 /* /////////////////////////////////// MEDIA QUERIES */
@@ -435,7 +491,7 @@ footer {
   .footer-opt div {
     width: 100%;
     margin: 0;
-    padding: 15px 10px;
+    padding: 12px 10px;
   }
 
   .footer-head {
@@ -459,6 +515,14 @@ footer {
 
   .footer-list li {
     padding: 13px 0;
+  }
+
+  .footer-opt2 {
+    padding: 40px 20px;
+  }
+
+  .footer-opt2 .copyright {
+    font-size: 12px;
   }
 }
 
